@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block heading %}
+    Now, choose your favorite websites. Limit to 3 choices only
+{% endblock %}
+{% block body %}
+    <form action="{{url_for('result')}}" method="post" >
+        {% for name,link in links %}
+            <div>
+                <label class="container"><a href={{link}} target="_blank">{{link}}</a>
+                    <input name="{{name}}" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+            </div>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+{% endblock %}

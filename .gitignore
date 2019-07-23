@@ -1,0 +1,6 @@
+/db
+/flask_session
+/contacts.csv
+/logfile
+/net_ids.csv
+/__pycache__
