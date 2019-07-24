@@ -4,3 +4,5 @@
 /logfile
 /net_ids.csv
 /__pycache__
+.DS_Store
+templates/.DS_Store

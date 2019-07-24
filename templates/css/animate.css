@@ -1,0 +1,178 @@
+h1,h2{
+    text-align: center;
+    font-family: "Righteous", cursive;
+}
+h1{
+    font-size: 100px;
+}
+body{
+    align-items: center;
+}
+#doraemon{
+    position: relative;
+    top: 100px;
+    animation-name: doraemon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: ease-out;
+}
+
+#doraemon-1{
+    position: relative;
+    left: 0vw;
+    width: 10vw;
+    height: 15vw;
+    animation-name: doraemon-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+#doraemon-2{
+    position: relative;
+    left: 10vw;
+    width: 10vw;
+    height: 15vw;
+    animation-delay: 1s;
+    animation-name: doraemon-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#doraemon-3{
+    position: relative;
+    left: 20vw;
+    width: 10vw;
+    height: 15vw;
+    animation-delay: 2s;
+    animation-name: doraemon-3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#doraemon-4{
+    position: relative;
+    left: 30vw;
+    width: 10vw;
+    height: 15vw;
+    animation-delay: 3s;
+    animation-name: doraemon-4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#doraemon-5{
+    position: relative;
+    left: 40vw;
+    width: 10vw;
+    height: 15vw;
+    animation-delay: 4s;
+    animation-name: doraemon-5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* 
+@keyframes doraemon{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+} */
+@keyframes doraemon-1{
+    10%{
+        transform: translateX(10vw);
+    }
+    20%{
+        opacity: 0;    
+    }
+}
+@keyframes doraemon-2{
+    20%{
+        transform: translateY(-10vw);
+    }
+    25%{
+        transform: translateY(10vw);
+    }
+    30%{
+        transform: translateX(5vw) translateY(-10vw);
+    }
+    35%{
+        transform: translateX(10vw);
+    }
+    40%{
+        opacity: 0;
+    }
+}
+@keyframes doraemon-3{
+    50%{
+        transform: scale(-1);
+        transform: translateX(10vw);
+    }
+    60%{
+        opacity: 0;    
+    }
+}
+@keyframes doraemon-4{
+    70%{
+        transform: scale(0.5);
+        transform: translateX(10vw);
+    }
+    80%{
+        opacity: 0;
+    }
+}
+@keyframes doraemon-5{
+    90%{
+        transform: scale(3);
+        transform: translateX(10vw);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.name_input input{
+    width: 500px;
+    height: 50px;
+    font-size: 40px;
+    border-style:groove;
+    border-color: #008080;
+}
+.name_input button{
+    position: relative;
+    left: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    background-color: #008080;
+    text-align: center;
+    display: inline-block;
+    border: 1px hidden;
+    border-radius: 5px;
+}
+#vote h1{
+    animation-name: vote-title;
+    animation-duration: 0.5s;
+    background: linear-gradient(#ff9f00 , #ff00ff);
+    background-clip: text;
+    animation-iteration-count: infinite;
+}
+@keyframes vote-title{
+    50%{
+        background: linear-gradient(#ffffff , #ffff00);
+        transform: scale(0.5);
+        color:white;
+    }
+}
+#vote{
+    background-image: url("https://img.freepik.com/free-vector/blue-abstract-acrylic-brush-stroke-textured-background_53876-86373.jpg?size=626&ext=jpg");
+    background-size: cover;
+}
