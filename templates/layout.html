@@ -3,8 +3,8 @@
     <head>
         <meta charset='utf-8'>
         <title>{{title}}</title>
-        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/animate.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/animate.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     </head>
@@ -12,5 +12,19 @@
         <h1>{% block heading %}{% endblock %}</h1>
             
         {% block body %}{% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/scripts.js')}}"></script>
+        <!-- <script>
+            console.log("in scripts.js\n");
+            var clickChecked = (checkedBox)=>{
+                console.log("checkedBox", checkedBox);
+                if(checkedBox.checked){
+                    // $("div > this").style.backgroundColor = '#BC8F8F';
+                    // $(this).parent().parent().css({'background-color': '#BC8F8F'});
+                    $(this).parent().parent().css({'background-color': '#BC8F8F'});
+                    console.log($(this).parent().parent());
+                }
+            }
+        </script> -->
     </body>
 </html>

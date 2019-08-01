@@ -5,22 +5,25 @@
         <meta charset='utf-8'>
         <title>{{title}}</title>
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/animate.css"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/animate.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --> 
     </head>
-    <body id="vote">
+    <body class="vote">
         <h1 >LET'S VOTE</h1>
         <form class="name_input" action="{{url_for('vote')}}" method="post" >
                 <input type="text" name="net_id" placeholder="Enter your Net Id">
                 <button>Submit</button>
         </form>
-            <div id="doraemon">
-                <img src="https://www.freepngimg.com/thumb/doraemon/35051-9-doraemon-transparent.png" id="doraemon-1" alt="Doraemon" > 
-                <img src="https://www.pinclipart.com/picdir/big/24-242858_doraemon-clipart-collage-doraemon-png-download.png" id="doraemon-2" alt="Doraemone" >
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItA3aMqWqZQ9asqPWpDaQD9LXWDkZGYTWIwmASvwYvpeXDIPx2w" id="doraemon-3" alt="Doraemon" >
-                <img src="https://dumielauxepices.net/sites/default/files/styles/225x120/public/doraemon-clipart-transparent-506768-2247626.png?itok=YsEK5sdQ" id="doraemon-4" alt="Doraemon" >
-                <img src="https://www.freepngimg.com/thumb/doraemon/35166-4-doraemon-transparent-picture.png" id="doraemon-5" alt="Smiley face" > 
-            </div>
+        <div id="doraemon">
+            <img src="https://www.freepngimg.com/thumb/doraemon/35051-9-doraemon-transparent.png" id="doraemon-1" alt="Doraemon" > 
+            <img src="https://www.pinclipart.com/picdir/big/24-242858_doraemon-clipart-collage-doraemon-png-download.png" id="doraemon-2" alt="Doraemone" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItA3aMqWqZQ9asqPWpDaQD9LXWDkZGYTWIwmASvwYvpeXDIPx2w" id="doraemon-3" alt="Doraemon" >
+            <img src="https://dumielauxepices.net/sites/default/files/styles/225x120/public/doraemon-clipart-transparent-506768-2247626.png?itok=YsEK5sdQ" id="doraemon-4" alt="Doraemon" >
+            <img src="https://www.freepngimg.com/thumb/doraemon/35166-4-doraemon-transparent-picture.png" id="doraemon-5" alt="Smiley face" > 
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/scripts.js')}}"></script>
     </body>
 </html>
