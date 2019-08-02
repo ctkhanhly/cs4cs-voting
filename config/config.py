@@ -13,4 +13,5 @@ with open(path_config_json) as f:
 if os.getenv("FLASK_ENV") == "development":
     DATABASE_URL = config_json["development"]["DATABASE_URL"]
 else:
-    DATABASE_URL = config_json["production"]["DATABASE_URL"]
+    #DATABASE_URL = config_json["production"]["DATABASE_URL"]
+    DATABASE_URL = os.getenv("DATABASE_URL")
