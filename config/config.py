@@ -7,6 +7,7 @@ import json
 
 
 DATABASE_URL =""
+print(os.getenv("FLASK_ENV"))
 if os.getenv("FLASK_ENV") == "development":
     path_config_json = os.path.dirname(os.path.abspath(__file__)) + '/config.json'
     with open(path_config_json) as f:
@@ -17,3 +18,4 @@ if os.getenv("FLASK_ENV") == "development":
 else:
     #DATABASE_URL = config_json["production"]["DATABASE_URL"]
     DATABASE_URL = os.getenv("DATABASE_URL")
+print(DATABASE_URL)

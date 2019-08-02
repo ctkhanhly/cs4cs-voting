@@ -1,4 +1,7 @@
-/db
+/db/info.txt
+/db/links.csv
+/db/net_ids.csv
+/db/req.txt
 /flask_session
 /contacts.csv
 /logfile
